@@ -10,8 +10,7 @@ import * as yup from "yup";
 //En az bir özel karakter ([@$!%*?&])
 //Toplam en az 5 karakter ({5,})
 
-const regex =
-  "^(?=.*[A-Z])(?=.*[a-z])(?=.*d)(?=.*[@$!%*?&])[A-Za-zd@$!%*?&]{5,}$";
+const regex = "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{5,}$";
 
 export const schema = yup.object().shape({
   // Emailin geçerli olması için koşullar
